@@ -7,13 +7,13 @@ fn main() {
 
     let bindings = bindgen::Builder::default()
         .header("wrapper.h")
-        .whitelist_type("fdisk_.*")
-        .whitelist_function("fdisk_.*")
-        .whitelist_var("FDISK_.*")
-        .whitelist_var("LIBFDISK_.*")
-        .whitelist_var("DOS_.*")
-        .whitelist_var("GPT_.*")
-        .whitelist_var("SGI_.*")
+        .allowlist_type("fdisk_.*")
+        .allowlist_function("fdisk_.*")
+        .allowlist_var("FDISK_.*")
+        .allowlist_var("LIBFDISK_.*")
+        .allowlist_var("DOS_.*")
+        .allowlist_var("GPT_.*")
+        .allowlist_var("SGI_.*")
         .generate()
         .expect("Unable to generate bindings");
 

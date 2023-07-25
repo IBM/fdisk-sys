@@ -1,6 +1,6 @@
 [package]
 name = "fdisk-sys"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Nikita Dubrovskii <nikita@linux.ibm.com>"]
 edition = "2018"
 license = "MIT"
@@ -8,10 +8,10 @@ repository = "https://github.com/IBM/fdisk-sys"
 description = "Rust bindings for libfdisk"
 
 [build-dependencies]
-bindgen = "^0.51.1"
+bindgen = "^0.66.1"
 
 [lib]
 path="lib.rs"
 
 [dependencies]
-libc="^0.2.65"
+libc="^0.2.141"
